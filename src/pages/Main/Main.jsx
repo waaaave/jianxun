@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 import Scroll from '../../baseUI/scroll'
 import { connect } from 'react-redux'
 import * as actionTypes from './store/actionCreators'
-import ShowImage from '../../components/showImg/showImg'
+import Images from '../../components/showImg/showImg'
+import SlideShow from '../../components/slideShow/slideShow'
 
 
 const Main = (props) => {
@@ -22,14 +23,11 @@ const Main = (props) => {
 
   return (
     <>
-      <Scroll
-        direction={"vertical"}
-        refresh={false}
-      >
+      
         <div>
-        <ShowImage images={images}/>
+          <SlideShow images={images}/>
+        
         </div>
-      </Scroll>
 
     </>
   )

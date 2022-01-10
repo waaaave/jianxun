@@ -2,7 +2,9 @@ import React, { useRef, useState } from 'react';
 import style from './showImg.module.css'
 
 const ShowImage = (props) => {
+
   const { images } = props
+  console.log(images, '////////////////////');
 
   const bigRef = useRef()
   const show = () => {
@@ -19,8 +21,9 @@ const ShowImage = (props) => {
       <div>
         {
           images.map((item, index) => {
+            console.log(item, '1111111111111');
             return (
-              <div  className={style.show}>
+              <div  className={style.show} key={index}>
                 <img src={item} key={index} className={style.img} onClick={show} alt="" />
 
                 <div className={style.bigImg} ref={bigRef} >

@@ -1,4 +1,7 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 1c3509ff0a582669a5e365d4506d4cef57d77126
 # Logs
 logs
 *.log
@@ -103,6 +106,7 @@ dist
 
 # TernJS port file
 .tern-port
+<<<<<<< HEAD
 =======
 node_modules
 .DS_Store
@@ -110,3 +114,5 @@ dist
 dist-ssr
 *.local
 >>>>>>> 01b3f2e (项目初始化)
+=======
+>>>>>>> 1c3509ff0a582669a5e365d4506d4cef57d77126

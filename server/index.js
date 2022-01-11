@@ -2,6 +2,8 @@ const fs = require('fs')
 const router = require('koa-router')()
 const Koa = require('koa')
 const cors = require('koa2-cors')
+const Mock = require('mockjs')
+const Random = Mock.Random
 
 const app = new Koa()
 const MainData = require('./Data/mainData/MainData.json')
@@ -26,6 +28,8 @@ router.get ('/all/main', async (ctx) => {
     data: MainData
   }
 })
+
+
 
 app.use(router.routes()).use(router.allowedMethods())
 

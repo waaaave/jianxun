@@ -7,13 +7,11 @@ import SlideShow from '../../components/slideShow/slideShow'
 
 
 const Main = (props) => {
-
   const {maindata}  = props
   const {getMainDataDispatch}  = props
 
   const { images=[] } = maindata
 
-  console.log(maindata);
 
   useEffect(()=>{
     if (!maindata.length) {
@@ -25,7 +23,7 @@ const Main = (props) => {
     <>
       
         <div>
-          <SlideShow images={images}/>
+          <SlideShow images={images} />
         
         </div>
 

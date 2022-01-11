@@ -1,27 +1,50 @@
 {
-  "images":[
-    "https://images.pexels.com/photos/1580625/pexels-photo-1580625.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    "https://images.pexels.com/photos/3294254/pexels-photo-3294254.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    "https://images.pexels.com/photos/3746214/pexels-photo-3746214.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    "https://images.pexels.com/photos/4467139/pexels-photo-4467139.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    "https://images.pexels.com/photos/4218701/pexels-photo-4218701.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    "https://images.pexels.com/photos/3831881/pexels-photo-3831881.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    "https://images.pexels.com/photos/937786/pexels-photo-937786.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    "https://images.pexels.com/photos/3793306/pexels-photo-3793306.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    "https://images.pexels.com/photos/5117913/pexels-photo-5117913.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    "https://images.pexels.com/photos/6039243/pexels-photo-6039243.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+  "images": [
+    ["https://images.pexels.com/photos/1580625/pexels-photo-1580625.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "title1", "auther1", "paragraph1"],
+    ["https://images.pexels.com/photos/3294254/pexels-photo-3294254.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "title2", "auther2", "paragraph2"],
+    ["https://images.pexels.com/photos/3746214/pexels-photo-3746214.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "title3", "auther3", "paragraph3"],
+    ["https://images.pexels.com/photos/4467139/pexels-photo-4467139.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "title4", "auther4", "paragraph4"],
+    ["https://images.pexels.com/photos/4218701/pexels-photo-4218701.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "title5", "auther5", "paragraph5"],
+    ["https://images.pexels.com/photos/3831881/pexels-photo-3831881.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "title6", "auther6", "paragraph6"],
+    ["https://images.pexels.com/photos/937786/pexels-photo-937786.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "title7", "auther7", "paragraph7"],
+    ["https://images.pexels.com/photos/3793306/pexels-photo-3793306.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "title8", "auther8", "paragraph8"],
+    ["https://images.pexels.com/photos/5117913/pexels-photo-5117913.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "title9", "auther9", "paragraph9"],
+   [ "https://images.pexels.com/photos/6039243/pexels-photo-6039243.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "title10", "auther10", "paragraph10"]
   ],
-
-  "title":[
-     "title1",
-     "title2",
-     "title3",
-     "title4",
-     "title5",
-     "title6",
-     "title7",
-     "title8",
-     "title9",
-     "title10"
+  "title": [
+    "title1",
+    "title2",
+    "title3",
+    "title4",
+    "title5",
+    "title6",
+    "title7",
+    "title8",
+    "title9",
+    "title10"
+  ],
+  "auther": [
+    "auther1",
+    "auther2",
+    "auther3",
+    "auther4",
+    "auther5",
+    "auther6",
+    "auther7",
+    "auther8",
+    "auther9",
+    "auther10"
+  ],
+  "essay": [
+    "this is the essay place1",
+    "this is the essay place2",
+    "this is the essay place3",
+    "this is the essay place4",
+    "this is the essay place5",
+    "this is the essay place6",
+    "this is the essay place7",
+    "this is the essay place8",
+    "this is the essay place9",
+    "this is the essay place10"
   ]
 }

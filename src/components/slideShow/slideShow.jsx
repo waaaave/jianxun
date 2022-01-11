@@ -1,15 +1,18 @@
 import React, { useEffect } from 'react'
 import Swiper from 'swiper'
 import 'swiper/css/swiper.min.css'
+import AboutEssay from '../aboutEssay/aboutEssay'
+import EssayInform from '../essayInform/essayInform'
 import ShowImage from '../showImg/showImg'
 import './slideShow.css'
 
 const SlideShow = (props) => {
   const { images } = props
+  console.log(images,'11111111111111111');
   useEffect(() => {
     setTimeout(() => {
       new Swiper('.swiper-container', {
-        loop: true,
+        loop: false,
         pagination: {
           el: '.swiper-pagination',
           type: 'bullets',
@@ -19,37 +22,34 @@ const SlideShow = (props) => {
     }, 100)
   }, [])
   return (
-    <div>
-      <div className="swiper">
+    <div >
+      <div className="swiper-container">
         <div className="swiper-wrapper">
           {
             images.map((item, index) => {
               return (
                 <div className="swiper-slide" key={index}>
-                  <img src={item} key={index} alt="" />
-                  <div>123</div>
+                  {/* <img src={item} key={index} alt="" /> */}
+                   <ShowImage images={item[0]} />
+                    <h2>{item[1]}</h2>
+                    <p>{item[2]}</p>
+                    <p>{item[3]}</p>
+                  <div>
+                  </div>
+                  <EssayInform/>
                 </div>
+                
               )
             })
+
+
           }
+          
+          
         </div>
         <div className="swiper-pagination"></div>
       </div>
     </div>
-
-    // <>
-    //   <div>
-    //     {
-    //       images.map((item,index) => {
-    //         return(
-    //           <div>
-    //             <ShowImage images={images} />
-    //           </div>
-    //         )
-    //       })
-    //     }
-    //   </div>
-    // </>
   )
 }
 

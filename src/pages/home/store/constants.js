@@ -1,0 +1,1 @@
+export const CHANGE_HOMEDATA = 'CHANGE_HOMEDATA';

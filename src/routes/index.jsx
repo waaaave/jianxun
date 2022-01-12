@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from 'react';
 import BlankLayout from '../layouts/BlankLayout';
 import { Redirect, Link } from 'react-router-dom';
 const Main = lazy(()=> import('../pages/Main/Main'));
+const Homes = lazy(()=> import('../pages/home/Home'));
 import Tabbuttom from '../components/tabbuttom/Tabbuttom';
 
 const SuspenseComponent = Component => props => {
@@ -33,9 +34,14 @@ export default [{
                 {
                     path: '/home/main',
                     component: SuspenseComponent(Main),
+                },
+                {
+                    path: '/home/home',
+                    component: SuspenseComponent(Homes),
                 }
             ]
-        }
+        },
+        
     ]
 }]
 

@@ -7,7 +7,7 @@ import shoucang from './icon/shoucang.png'
 import shouqi from './icon/shouqi.png'
 import hongzan from './icon/hongzan.png'
 import shengluehao from './icon/shengluehao.png'
-import './essayInform.css'
+import  './essayInform.css'
 
 
 const EssayInform = () => {

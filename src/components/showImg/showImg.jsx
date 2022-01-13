@@ -19,7 +19,7 @@ const ShowImage = (props) => {
 
   return (
     <>
-      <div>
+      <div className='showImg'>
               <div  className='show' >
                 <img src={images}  className='img' onClick={show} ref={baseRef} alt="" />
 

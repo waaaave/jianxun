@@ -7,7 +7,7 @@ import shoucang from './icon/shoucang.png'
 import shouqi from './icon/shouqi.png'
 import hongzan from './icon/hongzan.png'
 import shengluehao from './icon/shengluehao.png'
-import  './essayInform.css'
+import './essayInform.css'
 
 
 const EssayInform = () => {
@@ -48,52 +48,52 @@ const EssayInform = () => {
   }
 
   return (
-    <div className='inform'>
-      <div className='base' id='less' ref={lessRef} >
-        <div className='nav'>
+    <div className='essayInform'>
+      <div className='essayInform-base' id='less' ref={lessRef} >
+        <div className='essayInform-nav'>
           <img src={pinglun} alt="" />
         </div>
 
-        <div className='nav'>
+        <div className='essayInform-nav'>
           <img src={heizan} alt="" ref={heizanRef} onClick={dianzan} />
           <img src={hongzan} alt="" ref={hongzanRef} onClick={budianzan} style={{display:'none'}} />
 
         </div>
 
-        <div className='nav'>
+        <div className='essayInform-nav'>
           <img src={fenxiang} alt="" />
 
         </div>
 
-        <div className='nav' onClick={showMore}>
+        <div className='essayInform-nav' onClick={showMore}>
           <img src={shengluehao} />
 
         </div>
       </div>
-      <div className='all' id='more' ref={moreRef} >
-        <div className='nav'>
+      <div className='essayInform-all' id='more' ref={moreRef} >
+        <div className='essayInform-nav'>
           <img src={pinglun} alt="" />
         </div>
 
-        <div className='nav'>
+        <div className='essayInform-nav'>
           <img src={heizan} alt="" ref={mHeizanRef} onClick={dianzan} />
           <img src={hongzan} alt="" ref={mHongzanRef} onClick={budianzan} style={{display:'none'}} />
 
         </div>
 
-        <div className='nav'>
+        <div className='essayInform-nav'>
           <img src={fenxiang} alt="" />
         </div>
 
-        <div className='push' onClick={showLess} >
+        <div className='essayInform-push' onClick={showLess} >
           <img src={shouqi} alt="" />
         </div>
 
-        <div className='nav'>
+        <div className='essayInform-nav'>
           <img src={fankui} alt="" />
         </div>
 
-        <div className='nav'>
+        <div className='essayInform-nav'>
           <img src={shoucang} alt="" />
         </div>
 

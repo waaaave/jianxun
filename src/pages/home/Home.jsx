@@ -5,8 +5,9 @@ import Homes from '../../components/home/home'
 
 
 const Home = (props) => {
-  const { homedata }  = props
-    console.log(homedata,'1111111111111111111111111111');
+  const { homedata=[] }  = props
+
+  const { images } = homedata
 
   const {getHomeDataDispatch}  = props
 
@@ -23,8 +24,7 @@ const Home = (props) => {
     <>
       
         <div>
-          {/* <Homes images={images} /> */}
-          home
+          <Homes images={images} />
         </div>
 
     </>
@@ -33,7 +33,7 @@ const Home = (props) => {
 
 const mapStatrToProps = (state) => {
   return {
-    homedata: state.main.homedata
+    homedata: state.home.homedata
   }
 }
 

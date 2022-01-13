@@ -1,0 +1,29 @@
+.home{
+  width: 100vw;
+  height: 60vh; 
+}
+
+.home-images{
+  width: 100vw;
+  height: 60vh;
+}
+
+.home-icon{
+  position: fixed;
+  right: 0;
+  top: 0;
+  
+}
+
+.home-icon img{
+  width: 2rem;
+  margin-left: 3px;
+  
+}
+
+.home-flash{
+  position: fixed;
+  right: 0;
+  top: calc(60vh - 2rem);
+  width: 2rem;
+}

@@ -1,5 +1,5 @@
 import * as actionType from './constants.js';
-import { reqmain } from '../../../api/index.js'
+import { reqhome } from '../../../api/index.js'
 
 //主页数据
 export const changeHomeData = (data) => {
@@ -12,7 +12,7 @@ export const changeHomeData = (data) => {
 
 export const getHomeData = () => {
     return (dispatch) => {
-        reqmain()
+        reqhome()
             .then((res) => {
                 // console.log(res);
                 dispatch(changeHomeData(res.data.data))

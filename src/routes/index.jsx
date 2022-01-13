@@ -28,7 +28,7 @@ export default [{
                 {
                     path: '/home',
                     exact: true,
-                    render: () => < Redirect to = { "/home/main" }
+                    render: () => < Redirect to = { "/home/home" }
                     />,
                 },
                 {

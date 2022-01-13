@@ -1,0 +1,33 @@
+.beginButton{
+  height: 20vh;
+  margin-top: 0;
+  text-align: center;
+}
+
+.beginButton-button{
+  padding: 0 4rem .5rem 4rem;
+  border-radius: 20px;
+  background-color: rgb(115, 123, 224);
+  direction: unset;
+}
+
+.beginButton-button a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.beginButton-move img{
+  width: 4rem;
+  height: 2rem;
+  margin: 5px;
+  margin-top: 0;
+  padding: 0;
+  padding-top: 0;
+}
+.beginButton-move{
+
+  margin: 5px;
+  margin-top: 0;
+  padding: 0;
+  padding-top: 0;
+}

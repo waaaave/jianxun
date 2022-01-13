@@ -1,14 +1,13 @@
 import React, { useEffect } from 'react'
 import Swiper from 'swiper'
 import 'swiper/css/swiper.min.css'
-import AboutEssay from '../aboutEssay/aboutEssay'
 import EssayInform from '../essayInform/essayInform'
 import ShowImage from '../showImg/showImg'
 import './slideShow.css'
 
 const SlideShow = (props) => {
   const { images } = props
-  console.log(images,'11111111111111111');
+  console.log(images, '11111111111111111');
   useEffect(() => {
     setTimeout(() => {
       new Swiper('.swiper-container', {
@@ -17,12 +16,13 @@ const SlideShow = (props) => {
           el: '.swiper-pagination',
           type: 'bullets',
           clickable: true
-        }
+        },
+
       })
     }, 100)
   }, [])
   return (
-    <div >
+    <div className='slideShow' >
       <div className="swiper-container">
         <div className="swiper-wrapper">
           {
@@ -30,24 +30,19 @@ const SlideShow = (props) => {
               return (
                 <div className="swiper-slide" key={index}>
                   {/* <img src={item} key={index} alt="" /> */}
-                   <ShowImage images={item[0]} />
-                    <h2>{item[1]}</h2>
-                    <p>{item[2]}</p>
-                    <p>{item[3]}</p>
+                  <ShowImage images={item[0]} />
+                  <h2>{item[1]}</h2>
+                  <p>{item[2]}</p>
+                  <p>{item[3]}</p>
                   <div>
                   </div>
-                  <EssayInform/>
+                  <EssayInform />
                 </div>
-                
               )
             })
-
-
           }
-          
-          
         </div>
-        <div className="swiper-pagination"></div>
+        <div className="swiper-pagination" style={{ display: 'none' }}></div>
       </div>
     </div>
   )

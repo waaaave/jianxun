@@ -1,14 +1,14 @@
-.show {
+.showImg .show {
   width: 100vw;
   height: 40vh;
 }
 
-.img{
+.showImg .img{
   height: 100%;
   width: 100%;
 }
 
-.bigImg{
+.showImg .bigImg{
   position: absolute;
   top: 0;
   left: 0;
@@ -18,7 +18,7 @@
   background-color: #fff;
 }
 
-.bigImg .img1 {
+.showImg .bigImg .img1 {
   position: relative;
   top: 20vh;
   z-index: 100;

@@ -1,0 +1,42 @@
+.myDatas{
+  width: 80vw;
+  height: 45vh;
+  background-color: #fafafa;
+  margin: 0 auto;
+}
+
+.myDatas-ul{
+  margin: 0;
+  padding: 0;
+  height: 45vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.myDatas-li{
+  flex-grow: 1;
+  display: inline-block;
+  text-align: left;
+  border-bottom: 1px solid #ececec;
+}
+
+.myDatas-li img{
+  width: 1rem;
+  height: 1rem;
+}
+
+.myDatas p {
+  margin: 0;
+  display: inline;
+  margin-left: 1rem;
+}
+
+.myDatas img, .myDatas p {
+  margin-top: 0.5rem;
+}
+
+.myDatas-inform{
+  display: block;
+  margin-top: 1rem;
+}

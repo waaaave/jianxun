@@ -3,6 +3,7 @@ import './homeImageShow.css'
 import Setting from '../beginButton/icon/setting.png'
 import Light from '../beginButton/icon/light.png'
 import Flash from '../beginButton/icon/flash.png'
+import { useHistory } from 'react-router-dom';
 
 const HomeImageShow = (props) => {
   const { images=[], base } = props
@@ -12,12 +13,15 @@ const HomeImageShow = (props) => {
     setIndex(parseInt(Math.random()*10))
   }
 
+  const history = useHistory()
+    
+
   return (
     <>
       <div className="home">
         <div className="home-icon">
           <img src={Light} />
-          <img src={Setting} />
+          <img src={Setting} onClick={() => history.push('/jianxun/settings')} />
         </div>
         <img src={images[index]} className='home-images'/>
         <img src={Flash} className='home-flash' onClick={flash} />

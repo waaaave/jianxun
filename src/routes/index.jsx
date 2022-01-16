@@ -3,6 +3,7 @@ import BlankLayout from '../layouts/BlankLayout';
 import { Redirect, Link } from 'react-router-dom';
 const Main = lazy(()=> import('../pages/Main/Main'));
 const Homes = lazy(()=> import('../pages/home/Home'));
+const Settings = lazy(()=> import('../pages/settings/Settings'));
 import Tabbuttom from '../components/tabbuttom/Tabbuttom';
 
 const SuspenseComponent = Component => props => {
@@ -19,25 +20,29 @@ export default [{
         {
             path:'/',
             exact: true,
-            render: () => < Redirect to = { "/home" }/>,
+            render: () => < Redirect to = { "/jianxun" }/>,
         },
         {
-            path:'/home',
+            path:'/jianxun',
             component: Tabbuttom,
             routes: [
                 {
-                    path: '/home',
+                    path: '/jianxun',
                     exact: true,
-                    render: () => < Redirect to = { "/home/home" }
+                    render: () => < Redirect to = { "/jianxun/home" }
                     />,
                 },
                 {
-                    path: '/home/main',
+                    path: '/jianxun/main',
                     component: SuspenseComponent(Main),
                 },
                 {
-                    path: '/home/home',
+                    path: '/jianxun/home',
                     component: SuspenseComponent(Homes),
+                },
+                {
+                    path: '/jianxun/settings',
+                    component: SuspenseComponent(Settings),
                 }
             ]
         },

@@ -4,6 +4,7 @@ import * as actionTypes from './store/actionCreators'
 import Homes from '../../components/home/home'
 
 
+
 const Home = (props) => {
   const { homedata=[] }  = props
 

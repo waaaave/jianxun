@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './homeImageShow.css'
 import Setting from '../beginButton/icon/setting.png'
-import Light from '../beginButton/icon/light.png'
 import Flash from '../beginButton/icon/flash.png'
 import { useHistory } from 'react-router-dom';
 
@@ -20,7 +19,6 @@ const HomeImageShow = (props) => {
     <>
       <div className="home">
         <div className="home-icon">
-          <img src={Light} />
           <img src={Setting} onClick={() => history.push('/jianxun/settings')} />
         </div>
         <img src={images[index]} className='home-images'/>

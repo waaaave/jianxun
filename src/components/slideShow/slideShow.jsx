@@ -6,8 +6,8 @@ import ShowImage from '../showImg/showImg'
 import './slideShow.css'
 
 const SlideShow = (props) => {
-  const { images } = props
-  console.log(images, '11111111111111111');
+  const { abcd:images } = props
+  // {abcd:images} = { adcd:{} } => images={}
   useEffect(() => {
     setTimeout(() => {
       new Swiper('.swiper-container', {
@@ -26,14 +26,14 @@ const SlideShow = (props) => {
       <div className="swiper-container">
         <div className="swiper-wrapper">
           {
-            images.map((item, index) => {
+            images.map((item) => {
               return (
-                <div className="swiper-slide" key={index}>
+                <div className="swiper-slide" key={item[4]}>
                   {/* <img src={item} key={index} alt="" /> */}
                   <ShowImage images={item[0]} />
-                  <h2>{item[1]}</h2>
-                  <p>{item[2]}</p>
-                  <p>{item[3]}</p>
+                  <h2 className='show-title'>{item[1]}</h2>
+                  <p className='show-auther'>{item[2]}</p>
+                  <p className='show-essay'>{item[3]}</p>
                   <div>
                   </div>
                   <EssayInform />

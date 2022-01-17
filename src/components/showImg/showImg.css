@@ -1,6 +1,6 @@
 .showImg .show {
   width: 100vw;
-  height: 40vh;
+  height: 30vh;
 }
 
 .showImg .img{
@@ -24,4 +24,16 @@
   z-index: 100;
   width: 100%;
   
+}
+
+.swiper-slide{
+  text-align: left;
+}
+.show-title{
+  font-size: 1.5rem;
+}
+
+.show-auther{
+  font-size: .8rem;
+  color: #929292;
 }

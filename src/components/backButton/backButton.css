@@ -1,0 +1,12 @@
+
+.backButton{
+  position: fixed;
+  left: 0;
+  top: .2rem;
+  z-index: 1000 ;
+}
+
+.backButton img {
+  width: 2rem;
+  height: 2rem;
+}

@@ -14,20 +14,22 @@ const MainInform = () => {
       <div className='mainInform-base' >
         <div className='mainInform-nav'>
           <img src={yidu} alt="" />
+          <p>已读</p>
         </div>
 
         <div className='mainInform-nav'>
           <img src={shoucang} alt="" />
+          <p>收藏</p>
         </div>
 
         <div className='mainInform-nav'>
           <img src={pinglun} alt="" />
-
+          <p>评论</p>
         </div>
 
         <div className='mainInform-nav'>
           <img src={sousuo} />
-
+          <p>搜索</p>
         </div>
       </div>
     </div>

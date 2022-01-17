@@ -8,3 +8,7 @@ export const reqmain = () => {
 export const reqhome = () => {
   return Ajax('/all/home')
 }
+
+export const reqinforms = () => {
+  return Ajax('/all/informs')
+}

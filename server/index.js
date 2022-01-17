@@ -8,6 +8,7 @@ const Random = Mock.Random
 const app = new Koa()
 const MainData = require('./Data/mainData/MainData.json')
 const HomeData = require('./Data/homeData/HomeData.json')
+const InformsData = require('./Data/userData/UserData.json')
 
 app.use(cors({
   origin: function(ctx) { //设置允许来自指定域名请求
@@ -34,6 +35,13 @@ router.get ('/all/home', async (ctx) => {
   ctx.response.body = {
     success: true,
     data: HomeData
+  }
+})
+
+router.get ('/all/informs', async (ctx) => {
+  ctx.response.body = {
+    success: true,
+    data: InformsData
   }
 })
 

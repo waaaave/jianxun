@@ -7,7 +7,7 @@ const BeginButton = () => {
   return(
     <div className="beginButton">
       <div className='beginButton-move'><img src={move} alt="" /></div>
-      <button className='beginButton-button'><Link to='/home/main' >随机十篇</Link></button>
+      <button className='beginButton-button'><Link to='/jianxun/main' >随机十篇</Link></button>
     </div>
   )
 }

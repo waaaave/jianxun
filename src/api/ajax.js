@@ -1,6 +1,6 @@
 import axios from 'axios';
 axios.defaults.baseURL = 'http://localhost:9091/';
-// axios.defaults.baseURL = 'http://47.97.18.80:9091/';
+// axios.defaults.baseURL = 'http://47.97.18.80:9092/';
 export default function Ajax(url, data = {}, type = 'GET') {
     return new Promise((resolve, rejet) => {
         let Promise;

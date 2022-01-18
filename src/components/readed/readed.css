@@ -1,0 +1,38 @@
+.readed-component{
+
+  width: 40vw;
+  height: auto;
+  display: block;
+  float: left;
+
+}
+
+.readed-box{
+  margin: 0;
+  width: 40vw;
+  height: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.box-img{
+  width: 100%;
+  
+}
+
+.box-img img{
+  position: relative;
+  bottom: 0;
+  width: 40vw;
+  height: 14vh;
+}
+
+.box-title{
+  width: 40vw;
+  height: 100%;
+  background-color: #fff;
+}
+
+.box-title p {
+  margin: 0;
+}

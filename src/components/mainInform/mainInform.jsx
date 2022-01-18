@@ -5,14 +5,21 @@ import pinglun from './icon/pinglun.png'
 import sousuo from './icon/sousuo.png'
 
 import './mainInform.css'
+import { useHistory } from 'react-router-dom';
 
 
 const MainInform = () => {
 
+  const history = useHistory()
+
+  const toReaded = () => {
+    history.push('/jianxun/readed')
+  }
+
   return (
     <div className='mainInform'>
       <div className='mainInform-base' >
-        <div className='mainInform-nav'>
+        <div className='mainInform-nav' onClick={toReaded}>
           <img src={yidu} alt="" />
           <p>已读</p>
         </div>

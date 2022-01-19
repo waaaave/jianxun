@@ -6,7 +6,8 @@ import logo from './images/logo.png';
 import './Login.css'
 
 const Login = (props) => {
-  const { informsdata,informslogin=false } = props
+  const { informsdata} = props
+  let { isLogin } = informsdata
   const { getInformsDataDispatch, setIsLoginDataDispatch } = props
 
   useEffect(() => {
@@ -24,9 +25,9 @@ const Login = (props) => {
     <>
       <BackButton />
       <img src={logo} alt="" />
-      <div className="login-container" onClick={()=>changeLogin(informslogin)}>
+      <div className="login-container" onClick={()=>changeLogin(isLogin)}>
         {
-          informslogin ?
+          isLogin ?
             <div className="button" >
               <p>已经登录了</p>
               <button>注销</button >

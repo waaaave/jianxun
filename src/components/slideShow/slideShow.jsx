@@ -3,6 +3,7 @@ import Swiper from 'swiper'
 import 'swiper/css/swiper.min.css'
 import EssayInform from '../essayInform/essayInform'
 import ShowImage from '../showImg/showImg'
+// import Comment from '../comment/comment'
 import './slideShow.css'
 
 const SlideShow = (props) => {

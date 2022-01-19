@@ -12,10 +12,10 @@ export const changeInformsData = (data) => {
 }
 
 export const setIsLoginData = (data) => {
-
     return {
-        type: actionType.CHANGE_Login,
-        data: !data
+        type: actionType.CHANGE_LOGIN,
+        data: data
+        
     }
 }
 

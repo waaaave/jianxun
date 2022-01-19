@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import Comment from '../comment/comment'
 import pinglun from './icon/pinglun.png'
 import heizan from './icon/heizan.png'
 import fenxiang from './icon/fenxiang.png'
@@ -18,6 +19,7 @@ const EssayInform = () => {
   const hongzanRef = useRef()
   const mHeizanRef = useRef()
   const mHongzanRef = useRef()
+  const commentRef = useRef()
 
   const showLess = () => {
     lessRef.current.style.display = 'grid',
@@ -47,11 +49,16 @@ const EssayInform = () => {
 
   }
 
+  const openPinglun = () => {
+    console.log(commentRef.current, '======================');
+    commentRef.current.style.display='block'
+  }
+
   return (
     <div className='essayInform'>
       <div className='essayInform-base' id='less' ref={lessRef} >
         <div className='essayInform-nav'>
-          <img src={pinglun} alt="" />
+          <img src={pinglun} alt="" onClick={openPinglun} />
         </div>
 
         <div className='essayInform-nav'>
@@ -72,7 +79,7 @@ const EssayInform = () => {
       </div>
       <div className='essayInform-all' id='more' ref={moreRef} >
         <div className='essayInform-nav'>
-          <img src={pinglun} alt="" />
+          <img src={pinglun} alt="" onClick={openPinglun} />
         </div>
 
         <div className='essayInform-nav'>
@@ -97,9 +104,9 @@ const EssayInform = () => {
           <img src={shoucang} alt="" />
         </div>
 
-
-
+        
       </div>
+      <Comment forwardRef={commentRef} />
     </div>
   )
 }

@@ -42,3 +42,12 @@
   width: 7px !important;
   background: var(--swiper-pagination-color, var(--swiper-theme-color)) !important;
 }
+
+
+.show-title{
+  padding: 5px;
+}
+
+.show-essay{
+  padding: 5px;
+}

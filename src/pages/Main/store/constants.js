@@ -1,1 +1,2 @@
 export const CHANGE_MAINDATA = 'CHANGE_MAINDATA';
+export const PUSH_COMMENTS = 'PUSH_COMMENTS';

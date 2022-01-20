@@ -1,13 +1,18 @@
 import React, { useEffect } from 'react'
 import Swiper from 'swiper'
 import 'swiper/css/swiper.min.css'
+import Scroll from '../../baseUI/scroll'
 import EssayInform from '../essayInform/essayInform'
 import ShowImage from '../showImg/showImg'
 // import Comment from '../comment/comment'
 import './slideShow.css'
 
+
+
+
+
 const SlideShow = (props) => {
-  const { abcd:images } = props
+  const { abcd: images, openPinglun } = props
   // {abcd:images} = { adcd:{} } => images={}
   useEffect(() => {
     setTimeout(() => {
@@ -34,10 +39,15 @@ const SlideShow = (props) => {
                   <ShowImage images={item[0]} />
                   <h2 className='show-title'>{item[1]}</h2>
                   <p className='show-auther'>{item[2]}</p>
-                  <p className='show-essay'>{item[3]}</p>
+                  <Scroll
+                    direction={'vertical'}
+                    refresh={false}
+                  >
+                    <p className='show-essay'>{item[3]}</p>
+                  </Scroll>
                   <div>
                   </div>
-                  <EssayInform />
+                  <EssayInform openPinglun={openPinglun} />
                 </div>
               )
             })

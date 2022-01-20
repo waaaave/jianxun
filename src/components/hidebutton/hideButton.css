@@ -1,11 +1,11 @@
-.backButton{
+.hideButton{
   position: fixed;
   left: 0;
-  top: .2rem;
+  top: 43vh;
   z-index: 1000 ;
 }
 
-.backButton img {
+.hideButton img {
   width: 2rem;
   height: 2rem;
 }

@@ -1,6 +1,33 @@
 .comments{
+  position: absolute;
+  top: 0;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0,0,0,0.11);
-  display: none;
+  z-index: 100;
+}
+
+.main-comments{
+  background-color: #fff;
+
+  position: relative;
+  top: 40vh;
+  height: 57vh;
+  width: 100%;
+}
+
+.main-comments-body{
+  background-color: #eee;
+  height: 47vh;
+  text-align-last: left;
+}
+
+.add-comments{
+  text-align-last: left;
+}
+
+.add-comments input {
+  margin: 5px;
+  width: 70%;
+  height: 80%;
 }

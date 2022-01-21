@@ -1,0 +1,21 @@
+.comments-head{
+  background-color: #fff;
+  z-index: 1000;
+  height: 5vh;
+  width: 100vw;
+}
+
+.comments-head p {
+  margin: 0;
+  padding: 0;
+}
+
+.comments-show{
+  height: 95vh;
+  width: 100vw;
+}
+
+.comments-show img{
+  width: 100%;
+  height: 100%;
+}

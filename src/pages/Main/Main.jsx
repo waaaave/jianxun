@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Scroll from '../../baseUI/scroll'
 import { connect } from 'react-redux'
 import * as actionTypes from './store/actionCreators'
-import Images from '../../components/showImg/showImg'
 import SlideShow from '../../components/slideShow/slideShow'
+import LazyLoad from 'react-lazyload'
 import BackButton from '../../components/backButton/backButton.jsx';
 import Comment from '../../components/comment/comment'
 
@@ -35,8 +34,9 @@ const Main = (props) => {
 
       <div>
         <BackButton />
-
-        <SlideShow abcd={essays} openPinglun={openPinglun} />
+        <LazyLoad>
+          <SlideShow abcd={essays} openPinglun={openPinglun} />
+        </LazyLoad>
         {/* <div className="comments-box"> */}
           {isShowComment ? <Comment openPinglun={openPinglun}  /> : ''}
         {/* </div> */}

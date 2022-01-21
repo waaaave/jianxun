@@ -1,0 +1,37 @@
+
+.liked-top-bar{
+  display: block;
+  padding: 2rem auto;
+  height: 2rem;
+  background-color: #ebebeb;
+}
+
+.liked-top-bar ul{
+  list-style: none;
+  padding: 0;
+}
+
+.liked-top-bar li{
+  display: inline;
+  padding: 20px 20px;
+}
+
+.liked-top-bar a {
+  color: #333;
+  text-decoration: none;
+}
+
+.liked-top-bar a:active{
+  color: cadetblue;
+  border-bottom: 2px solid cadetblue;
+}
+
+.liked-show{
+  width: 100vw;
+  height: 90vh;
+}
+
+.liked-show img{
+  width: 100%;
+  height: 100%;
+}

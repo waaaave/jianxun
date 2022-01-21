@@ -1,0 +1,21 @@
+.search-head{
+  background-color: #fff;
+  z-index: 1000;
+  height: 5vh;
+  width: 100vw;
+}
+
+.search-head p {
+  margin: 0;
+  padding: 0;
+}
+
+.search-show{
+  height: 95vh;
+  width: 100vw;
+}
+
+.search-show img{
+  width: 100%;
+  height: 100%;
+}

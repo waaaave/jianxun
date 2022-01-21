@@ -16,6 +16,18 @@ const MainInform = () => {
     history.push('/jianxun/readed')
   }
 
+  const toLiked = () => {
+    history.push('/jianxun/liked')
+  }
+
+  const toComments = () => {
+    history.push('/jianxun/comments')
+  }
+
+  const toSearch = () => {
+    history.push('/jianxun/search')
+  }
+
   return (
     <div className='mainInform'>
       <div className='mainInform-base' >
@@ -25,17 +37,17 @@ const MainInform = () => {
         </div>
 
         <div className='mainInform-nav'>
-          <img src={shoucang} alt="" />
+          <img src={shoucang} alt="" onClick={toLiked} />
           <p>收藏</p>
         </div>
 
         <div className='mainInform-nav'>
-          <img src={pinglun} alt="" />
+          <img src={pinglun} alt="" onClick={toComments} />
           <p>评论</p>
         </div>
 
         <div className='mainInform-nav'>
-          <img src={sousuo} />
+          <img src={sousuo} onClick={toSearch}/>
           <p>搜索</p>
         </div>
       </div>
